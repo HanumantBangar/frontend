@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/1c74e082c5.js" crossorigin="anonymous"></script>
+    <style>
+        .container {
+            width: 500px;
+            background: beige;
+            padding: 30px 40px;
+            position: absolute;
+            top: 30px;
+            left: 25%;
+        }
+        label{
+            display: block;
+            margin-bottom: 12px;
+            font-weight: 400;
+            font-size: 18px;
+        }
+        input{
+            display: block;
+            width: 90%;
+            /* height: 50px; */
+            padding: 8px 20px;
+            margin-bottom: 24px;
+            outline: none;
+            /* border: 2px solid black; */
+        }
+        input[type="radio"] {
+            margin: 0;
+            width: auto;
+            display: inline;
+            margin: 0px 12px 24px;
+        }
+        input[type="file"] {
+            padding: 0;
+            border: 1px solid;
+            width: 98%;
+            height: 30px;
+            background-color: white;
+            
+        }
+        #fname:focus{
+            outline: 1px;
+        }
+        /* form input:valid{
+            border: 2px solid green;
+            outline: none;
+        } */
+        #fname:valid,#lname:valid,#email:valid,#contact:valid{
+            border: 2px solid green;
+            outline: none;
+        }
+        form input:invalid{
+            border: 2px solid red;
+            outline: none;
+        }
+        .btn {
+            width: 98%;
+            background-color: black;
+            color: white;
+            font-size: 16px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            border-radius: 12px;
+            border: none;
+        }
+        legend {
+            font-size: 28px;
+            text-align: center;
+            color: green;
+        }
+        fieldset{
+            padding: 30px;
+            border-radius: 24px;
+        }
+        .btn:hover{
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form action="">
+                    <fieldset>
+                        <legend>Registration form..</legend>
+                        <label for="fname">First name</label>
+                        <input type="text" id="fname" placeholder="Enter your first name" pattern="[A-Za-z]+">
+
+                        <label for="lname">Last name</label>
+                        <input type="text" id="lname" placeholder="Enter your last name" pattern="[A-Za-z]+">
+
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Enter your email" pattern="[A-Za-z0-9@.]+">
+
+                        <label for="contact">Contact</label>
+                        <input type="text" placeholder="Enter your contact number" id="contact" pattern="[0-9]+">
+
+                        <label>Gender</label>
+                        <input type="radio" name="gender">Male
+                        <input type="radio" name="gender">Female
+                        <input type="radio" name="gender">Other
+
+                        <label for="dob">Date Of Birth</label>
+                        <input type="datetime-local" id="dob">
+                    
+                        <label for="file">Upload Document</label>
+                        <input type="file" id="file">
+                        
+                        <input type="submit" value="Register" class="btn">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

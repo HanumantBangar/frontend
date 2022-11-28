@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/1c74e082c5.js" crossorigin="anonymous"></script>
+    <style>
+        .container {
+            background-color: lightblue;
+            width: 300px;
+            padding: 24px;
+            position: absolute;
+            top: 65px;
+            left: 450px;
+            border-top-right-radius: 60px;
+            border-bottom-left-radius: 60px;
+        }
+        /* .col {
+            margin-bottom: 24px;
+        } */
+        .col .form-control {
+            width: 250px;
+            height: 25px;
+            padding-left: 28px;
+        }
+        .col i{
+            position: absolute;
+            padding: 7px;
+        }
+        input.btn {
+            width: 280px;
+            height: 25px;
+            border: none;
+        }
+        h1 {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .btn:hover{
+        background-color: green;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Login Here..</h1>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Enter username" class="form-control">
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-lock"></i>
+            <input type="text" placeholder="Enter Password" class="form-control">
+        </div>
+        <div class="col">
+            <input type="submit" value="Login" class="btn">
+        </div>
+    </div>
+   </div>
+</body>
+</html>
